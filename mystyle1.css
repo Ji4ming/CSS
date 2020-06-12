@@ -1,0 +1,149 @@
+/* simple instance */
+
+body {
+    background-image:url("pig1.jpg");
+    background-color:white;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position-x:right;
+    background-position-y:top;
+}
+
+ul.a {
+    list-style-type:circle;
+}
+
+ul.b {
+    list-style-type:square;
+}
+
+ol.c {
+    list-style-type:upper-roman;
+}
+
+ol.d {
+    list-style-type:lower-alpha;
+}
+
+ol.e {
+    list-style-image: url("pig1.jpg");
+}
+
+div {
+    color:black;
+    /* color:#00ff00; */
+    /* color:rgb(255,0,0) */
+
+    font-family:Verdana, Arial, "Times New Roman";
+    /* font-family 属性应该设置几个字体名称作为一种"后备"机制，如果浏览器不支持第一种字体，他将尝试下一种字体。*/
+
+    font-size:30px;
+
+    font-style:normal;
+    /* italic, oblique */
+    /* font-weight:normal, bold, lighter, (或者直接加数字) */
+
+    /* 以上可以写成：font:Verdana, 30px, bold; (在一个声明中的所有字体属性) */
+
+    text-align:justify;         /* center left right */
+    /* 当text-align设置为"justify"，每一行被展开为宽度相等，左，右外边距是对齐（如杂志和报纸）。 */
+
+    /* 文本缩进 */
+    text-indent:10px;
+
+    /* 字符之间的空间 */
+    letter-spacing:-1px;
+
+    /* 字符串之间的空间 */
+    word-spacing:20px;
+
+}
+
+div.textdecoration1 {
+    text-decoration:overline;
+}
+
+div.textdecoration2 {
+    text-decoration:line-through;
+}
+
+div.textdecoration3 {
+    text-decoration:underline;
+}
+
+div.uppercase {
+    text-transform:uppercase;
+}
+
+div.lowercase {
+    text-transform:lowercase;
+}
+
+div.capitalize {
+    text-transform:capitalize;
+}
+
+div.small {
+    line-height:70%;
+}
+
+div.big {
+    line-height:200%;
+}
+
+div.rtltext {
+    direction:rtl;
+    unicode-bidi:bidi-override;
+    /* unicode-bidi 会改变字符串的字符方向 */
+}
+
+div.textshadow {
+    text-shadow:2px 2px #FF0000;
+}
+
+a.style {
+    text-decoration:none;
+    /* text-decoration 属性用来设置或删除文本的装饰。从设计的角度看 text-decoration属性主要是用来删除链接的下划线。 */
+
+    background-color:aqua;
+
+    color:yellow;
+}
+/*
+   a:link - 正常，未访问过的链接
+   a:visited - 用户已访问过的链接
+   a:hover - 当用户鼠标放在链接上时
+   a:active - 链接被点击的那一刻
+
+   以上均可直接使用，声明时使用冒号。
+*/
+
+img.top {
+    vertical-align: text-top;
+}
+
+img.bottom {
+    vertical-align:text-bottom;
+}
+
+span.display {
+    display:inline;
+    /* display:block, none */
+    /* visibility:hidden */
+}
+
+/* CSS 组合选择符 */
+section p   /* section > p */
+{
+    background-color:yellow;
+}
+
+section+div
+{
+    background-color:green;
+}
+
+section~h3
+{
+    background-color:pink;
+}

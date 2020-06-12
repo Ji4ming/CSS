@@ -1,0 +1,161 @@
+<!--CSSNotes_Ji4ming_20200612-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> CSSNotes_Ji4ming </title>
+
+    <style>
+        /* Internal style sheet 内部样式 */
+        /* ID selector(1) */
+        #idselector1 {
+            text-align:center;
+            color:red;
+        }
+
+        /* ID selector(2) */
+        #idselector2 span.abc {
+            text-align:left;
+            color:aqua;
+        }
+
+        /* class selector(1) */
+        .classselector1 {
+            text-align:center;
+            color:blue;
+        }
+
+        /* class selector(2) */
+        p.classselector2 {
+            text-align:center;
+            color:green;
+        }
+
+        /* class selector(3) */
+        .classselector1 span {
+            text-align:center;
+            color:hotpink;
+        }
+
+        /* attribute selector */
+        [h6]{
+            background-color:blueviolet;
+        }
+
+        input[type="text"] {
+            width:150px;
+            display:block;
+            margin-bottom:10px;
+            background-color:yellow;
+        }
+
+        input[type="button"] {
+            width:120px;
+            margin-left:35px;
+            display:block;
+        }
+
+        #overflow {
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            width: 80%;
+            height: 100px;
+            overflow: scroll;
+            border: 1px solid #ccc;
+        }
+
+    </style>
+
+    <!-- External style sheet 外部样式 -->
+    <link rel="stylesheet" type="text/css" href="mystyle1.css">
+
+</head>
+<body>
+    <p> 多重样式优先级：</p>
+    <p> (内联样式）Inline style > （内部样式）Internal style sheet >（外部样式）External style sheet > 浏览器默认样式 </p>
+    <!-- ID selector -->
+    <p id="idselector1"> id selector1 </p>
+    <p id="idselector2"><span class="abc"> id selector2 </span> </p>
+    <!-- class selector -->
+    <p class="classselector1">
+        class  selector1 <br>
+        <span> class selector3 </span>
+    </p>
+    <p class="classselector2"> class  selector2 </p>
+    <!-- inline style -->
+    <p style="text-align:center;color:darkorange;"> inline style </p>
+
+    <div class="textdecoration1 big"> text decoration1 </div>
+    <div class="textdecoration2 big"> text decoration2 </div>
+    <div class="textdecoration3 big"> text decoration3 </div>
+
+    <div class="uppercase small"> text uppercase </div>
+    <div class="lowercase small"> text lowercase </div>
+    <div class="capitalize small"> text capitalize </div>
+
+    <div class="rtltext"> a b c d </div>
+
+    <div class="textshadow"> text shadow </div>
+
+    <div id="overflow">
+        <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+        <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+        <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+        <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+        <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+        <p>这里的文本内容是可以滚动的，滚动条方向是垂直方向。</p>
+    </div>
+
+    <section>
+        <p>段落 1。 在 section 中。</p>
+        <p>段落 2。 在 section 中。</p>
+    </section>
+    <div>section 之后的第一个 div 元素。</div>
+    <div>section 之后的第二个 div 元素。</div>
+    <div>section 之后的第二个 div 元素。</div>
+    <p>段落 3。不在 section 中。</p>
+    <p>段落 4。不在 section 中。</p>
+    <h3>段落 5。不在 section 中。</h3>
+    <h3>段落 6。不在 section 中。</h3>
+
+    <form name="input" action="demo-form.php" method="get">
+        Firstname:<input type="text" name="fname" value="Peter" size="20">
+        Lastname:<input type="text" name="lname" value="Griffin" size="20">
+        <input type="button" value="Example Button">
+    </form>
+
+    <p>一个<img src="pig1.jpg" alt="pig1" style="float:left" width="96" height="54" />默认对齐浮动左的图像。</p><br>
+    <p>一个<img class="top" src="pig1.jpg" alt="pig1" width="96" height="54" />  text-top 对齐的无浮动图像。</p><br>
+    <p>一个<img class="bottom" src="pig1.jpg" alt="pig1" width="96" height="54" /> text-bottom 对齐的无浮动图像。</p><br>
+
+    <a class="style" href="https://www.runoob.com/try/try.php?filename=trycss_link2"> goto a good instance </a><br><br>
+    <a href="https://www.runoob.com/try/try.php?filename=trycss_link_advanced"> goto another good instance for url box </a><br><br>
+    <a href="https://www.runoob.com/css/css-table.html"> goto table seminar </a><br><br>
+
+    <img src="box.jpg" alt="box in CSS"/><br>
+    <a href="https://www.runoob.com/css/css-boxmodel.html"> goto box model seminar </a><br><br>
+    <a href="https://www.runoob.com/css/css-border.html"> goto border setting seminar </a><br><br>
+    <a href="https://www.runoob.com/css/css-outline.html"> goto outline setting seminar </a><br><br>
+    <a href="https://www.runoob.com/css/css-margin.html"> goto margin setting seminar </a><br><br>
+    <a href="https://www.runoob.com/css/css-padding.html"> goto padding setting seminar </a><br><br><br>
+
+    <h1> 常用工具（随用随学）：</h1>
+    <a href="https://www.runoob.com/css/css-positioning.html"> goto positioning setting seminar(图片、文字定位，以及文字图片前后等) </a><br><br>
+    <a href="https://www.runoob.com/css/css-pseudo-elements.html"> CSS 伪元素 -> ：用法 </a><br><br>
+    <a href="https://www.runoob.com/css/css-navbar.html"> CSS 导航条用法 -> 核心* </a><br><br>
+    <a href="https://www.runoob.com/css/css-dropdowns.html"> CSS 下拉菜单用法 -> 核心* </a><br><br>
+    <a href="https://www.runoob.com/css/css-tooltip.html"> CSS 提示工具用法 -> 核心* </a><br><br>
+    <a href="https://www.runoob.com/css/css-image-gallery.html"> CSS 图片廊用法 -> 核心* </a><br><br>
+    <a href="https://www.runoob.com/css/css-image-transparency.html"> CSS 图片透明度 -> 核心* </a><br><br>
+    <a href="https://www.runoob.com/css/css-form.html"> CSS 表单工具 -> 核心* </a><br><br><br>
+
+    <h1> 更多实例 ：</h1>
+    <a href="https://www.runoob.com/css/css-examples.html"> CSS 实例大合集 </a><br><br><br>
+
+    <h1 style="color:red"> <del style="color:black">THE END, </del> TO BE UPDATED! </h1>
+    <hr>
+
+</body>
+</html>
